@@ -1,8 +1,12 @@
 import { Module } from "@nestjs/common";
+
+import { FormFieldValueModule } from "./form-field-value/form-field-value-module";
+import { FormModule } from "./form/form-module";
+import { FormFieldTemplateModule } from "./form-field-template/form-field-template-module";
+import { FormTemplateModule } from "./form-template/form-template-module";
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
 import { PrismaService } from "./prisma/prisma.service";
-import { FormTemplateModule } from "./form-template/form-template.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { LoggerService } from "./logger/logger.service";
 import { GraphQLModule } from "@nestjs/graphql";
@@ -11,6 +15,9 @@ import { ApolloServerPluginLandingPageLocalDefault } from "@apollo/server/plugin
 
 @Module({
   imports: [
+    FormFieldValueModule,
+    FormModule,
+    FormFieldTemplateModule,
     FormTemplateModule,
     PrismaModule,
     GraphQLModule.forRoot<ApolloDriverConfig>({
