@@ -5,8 +5,8 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql" // Or your database of choice, e.g., "mysql", "sqlite", "sqlserver"
-  url      = env("DATABASE_URL")
+  provider = "postgresql"
+  url      = "postgresql://tannor:postgres@localhost:5432/mydb?schema=public"
 }
 
 model FormTemplate {

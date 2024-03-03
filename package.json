@@ -28,6 +28,7 @@
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/swagger": "^7.3.0",
     "@prisma/client": "^5.10.2",
+    "@prisma/sdk": "^4.0.0",
     "apollo-server-express": "^3.13.0",
     "graphql": "^16.8.1",
     "nest-winston": "^1.9.4",
@@ -39,6 +40,10 @@
   },
   "devDependencies": {
     "@graphql-codegen/cli": "5.0.2",
+    "@graphql-codegen/introspection": "4.0.3",
+    "@graphql-codegen/typescript": "4.0.6",
+    "@graphql-codegen/typescript-document-nodes": "4.0.6",
+    "@graphql-codegen/typescript-resolvers": "4.0.6",
     "@nestjs/cli": "^10.0.0",
     "@nestjs/schematics": "^10.0.0",
     "@nestjs/testing": "^10.0.0",
@@ -63,11 +68,7 @@
     "ts-loader": "^9.4.3",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.3.3",
-    "@graphql-codegen/typescript": "4.0.6",
-    "@graphql-codegen/typescript-document-nodes": "4.0.6",
-    "@graphql-codegen/typescript-resolvers": "4.0.6",
-    "@graphql-codegen/introspection": "4.0.3"
+    "typescript": "^5.3.3"
   },
   "jest": {
     "moduleFileExtensions": [
