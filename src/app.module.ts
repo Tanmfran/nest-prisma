@@ -20,13 +20,13 @@ import { ApolloServerPluginLandingPageLocalDefault } from "@apollo/server/plugin
     FormFieldTemplateModule,
     FormTemplateModule,
     PrismaModule,
-    GraphQLModule.forRoot<ApolloDriverConfig>({
-      driver: ApolloDriver,
-      autoSchemaFile: "src/graphql/schema.gql", // This will generate the schema automatically
-      sortSchema: true,
-      playground: false, // Disable playground
-      plugins: [ApolloServerPluginLandingPageLocalDefault()],
-    }),
+    // GraphQLModule.forRoot<ApolloDriverConfig>({
+    //   driver: ApolloDriver,
+    //   autoSchemaFile: "src/graphql/schema.gql", // This will generate the schema automatically
+    //   sortSchema: true,
+    //   playground: false, // Disable playground
+    //   plugins: [ApolloServerPluginLandingPageLocalDefault()],
+    // }),
     // other modules
   ],
   controllers: [AppController],
